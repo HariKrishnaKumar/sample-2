@@ -69,14 +69,6 @@ rahul/
 ├── gui/
 │   ├── __init__.py
 │   └── main_window.py        # PySide6 QMainWindow with 5 functional tabs
-│
-└── tests/
-    ├── __init__.py
-    ├── test_validators.py    # Unit tests for input validation
-    ├── test_repository.py    # Unit tests for database CRUD, cascade & persistence
-    ├── test_grade_service.py # Unit tests for business calculations & summaries
-    ├── test_cli.py           # Unit tests for CLI interaction & error handling
-    └── test_gui.py           # Unit tests for GUI components & CLI-GUI feature parity
 ```
 
 ---
