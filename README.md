@@ -190,31 +190,6 @@ GUI Tabs:
 3. **Marks:** Select a student and enter/update marks for all configured subjects with clear numeric validation.
 4. **Result:** View complete academic breakdown for any student including individual subject marks, total score, average, percentage, and letter grade.
 5. **Class Summary:** Complete table of all students with ranked performance and comprehensive summary statistics.
-
----
-
-## 8. Testing & Verification
-
-The project includes an automated test suite with 46 tests covering all 12 required verification scenarios:
-
-1. **Student Registration:** Normal registration with valid parameters.
-2. **Duplicate Student IDs:** Rejection of duplicates with clear business error.
-3. **Student Updates:** Updating name and class/section.
-4. **Student Deletion:** Deleting student records.
-5. **Mark Validation:** Range (0–100), non-numeric rejection, boolean rejection.
-6. **Incomplete Marks:** Missing marks left as `None` without being converted to zero.
-7. **Grade Calculations:** Exact grade boundary mapping against known test cases.
-8. **Highest & Lowest Performers:** Class ranking and deterministic tie-breaking.
-9. **Class Performance Summary:** Class average and grade distribution calculation.
-10. **Database Persistence:** Retention across separate database connection sessions.
-11. **Foreign-Key Cascade Deletion:** Automatic removal of student marks upon student deletion.
-12. **CLI & GUI Feature Parity:** Verification that both interfaces yield identical results via shared services.
-
-### Run All Tests:
-```bash
-python -m unittest discover tests
-```
-
 ---
 
 ## 9. Simplicity-First Intermediate Coding Standard
